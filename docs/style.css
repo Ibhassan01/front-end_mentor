@@ -16,7 +16,7 @@ body{
     justify-content: center;
     align-items: center;
     padding:10px 20px;
-    background: var(--Grayish-blue);
+    background: var(--Light-gray);
 }
 a{
     color: blue;

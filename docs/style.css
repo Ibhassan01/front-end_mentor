@@ -5,7 +5,7 @@
     --Dark-blue: hsl(218, 44%, 22%);
 }
 @font-face {
-    font-family: "Outfit";
+    font-family: 'Outfit', sans-serif;
     src: url(https://fonts.google.com/specimen/Outfit);
 }
 body{
@@ -29,6 +29,7 @@ a{
     font-size: 30px;
 }
 p{
+    font-weight: 400;
     text-align: center;
     color: var(--Grayish-blue);
     font-size: 19px;
@@ -42,13 +43,14 @@ img{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10px;
-    height: 580px;
+    padding: 10px 5px;
+    height: 590px;
     width: 350px;
     border-radius: 30px;
     background-color: white;
 }
 .attribution{
+    font-size: 12px;
     position: absolute;
     text-align: center;
     bottom: 15px;

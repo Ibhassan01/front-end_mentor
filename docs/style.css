@@ -38,19 +38,18 @@ p{
 }
 img{
     border-radius: 30px;
-    margin: 5px 0 10px 0;
 }
 .img-1{
-    height: 280px;
-    width: 280px;
+    height: 100%;
+    width: 100%;
 }
 .container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10px 5px;
-    width: 300px;
+    padding: 10px 10px;
+    width: 270px;
     border-radius: 30px;
     background-color: white;
 }

@@ -16,15 +16,16 @@
     --Dark-gray-blue: hsl(224, 30%, 27%);
 }
 *{
-    margin: 0;
+    margin:0;
     padding: 0;
     box-sizing: border-box;
 }
 body{
+
     font-family: 'Hanken Grotesk', sans-serif;
-    background-color: var(white);
 }
 .header{
+    width: 100vw;
     border-radius: 0 0 30px 30px;
     display: flex;
     flex-direction: column;
@@ -87,7 +88,7 @@ section{
     font-weight: 700;
     margin: 10px;
 }
-section div{
+section .Reaction, .Memory, .Verbal, .Visual{
     border-radius: 10px;
     margin: 5px 0;
     padding: 15px;
@@ -133,7 +134,8 @@ section div{
 }
 
 .continue{
-    border: 1px solid teal;
+    align-self: center;
+    width: 100%;
     text-align: center;
     padding: 17px 0;
     margin: 10px 20px;
@@ -144,4 +146,35 @@ section div{
 .continue a{
     color: var(--White);
     text-decoration: none;
+    text-align: center;
+}
+
+@media only screen and (min-width:500px){
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-size: 10px;
+    }
+    .container{
+        border-radius: 30px;
+        display: flex;
+        box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    }
+    .header{
+        border-radius:25px;
+        width:15rem;
+    }
+    .header p{
+        padding: 10px 0;
+        font-size: 15px;
+    }
+    section{
+        width: 15rem;
+    }
+    .continue:hover{
+        cursor: pointer;
+        background: linear-gradient(var(--Light-slate-blue), var(--Light-royal-blue));
+    }
 }

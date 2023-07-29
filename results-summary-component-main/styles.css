@@ -21,7 +21,6 @@
     box-sizing: border-box;
 }
 body{
-
     font-family: 'Hanken Grotesk', sans-serif;
 }
 .header{
@@ -48,7 +47,7 @@ header .p2{
     margin: 20px 0;
 }
 header .p3{
-    margin: 0 0 30px 0;
+    margin: 0 0 20px 0;
     text-align: center;
 }
 
@@ -171,10 +170,29 @@ section .Reaction, .Memory, .Verbal, .Visual{
         font-size: 15px;
     }
     section{
+        padding: 10px;
         width: 15rem;
     }
     .continue:hover{
         cursor: pointer;
         background: linear-gradient(var(--Light-slate-blue), var(--Light-royal-blue));
+    }
+}
+@media only screen and (max-height:420px){
+    section .Reaction, .Verbal, .Visual, .Memory{
+        padding: 5px;
+        border-radius: 5px;
+    }
+    .header .p{
+        border: 1px solid red;
+    }
+    .header .p1{
+        margin: 7px 0;
+    }
+    .header .p2{
+        margin: 7px 0;
+    }
+    .header .p3{
+        margin: 7px 0;
     }
 }

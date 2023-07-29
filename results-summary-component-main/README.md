@@ -18,8 +18,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [result-summary01.netlify.app](result-summary01.netlify.app)
-
+- Live Site URL: [result-summary01.netlify.app]
 ### Built with
 
 - Semantic HTML5 markup

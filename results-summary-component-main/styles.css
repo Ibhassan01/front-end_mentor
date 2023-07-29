@@ -177,7 +177,7 @@ section .Reaction, .Memory, .Verbal, .Visual{
 }
 @media only screen and (max-height:420px){
     section .Reaction, .Verbal, .Visual, .Memory{
-        padding: 8px;
+        padding: 9px;
         border-radius: 5px;
     }
     .header .p1{

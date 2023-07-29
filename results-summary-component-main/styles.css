@@ -72,10 +72,6 @@ header .p3{
     font-weight: 600;
     color: var(--Light-lavender);
 }
-.attribution{
-    text-align: center;
-    font-size: 10px;
-}
 
 /*---------Section--------------*/
 section{
@@ -141,6 +137,7 @@ section .Reaction, .Memory, .Verbal, .Visual{
     border-radius: 30px;
     background-color: var(--Dark-gray-blue);
     font-weight: 700;
+    border: none;
 }
 .continue a{
     color: var(--White);
@@ -180,11 +177,8 @@ section .Reaction, .Memory, .Verbal, .Visual{
 }
 @media only screen and (max-height:420px){
     section .Reaction, .Verbal, .Visual, .Memory{
-        padding: 5px;
+        padding: 8px;
         border-radius: 5px;
-    }
-    .header .p{
-        border: 1px solid red;
     }
     .header .p1{
         margin: 7px 0;
@@ -194,5 +188,8 @@ section .Reaction, .Memory, .Verbal, .Visual{
     }
     .header .p3{
         margin: 7px 0;
+    }
+    .continue{
+        margin: 20px 0 0 0;
     }
 }

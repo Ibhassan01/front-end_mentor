@@ -1,0 +1,382 @@
+:root{
+    --Almost-White: hsl(0, 3%, 94%);
+    --Medium-Gray: hsl(0, 0%, 41%);
+    --Almost-Black: hsl(0, 0%, 8%);
+    --outline:1px solid red;
+}
+
+
+body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    background-color: var(--Almost-White);
+    height: 100vh;
+    box-sizing: border-box;
+}
+.header{
+    padding: 30px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.full-width{
+    flex-basis: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.links{
+    width: 38%;
+    list-style-type: none;
+    justify-content:flex-start;
+    display:flex;
+    gap:2%;
+}
+.links li{
+    color: var(--Medium-Gray);
+    cursor: pointer;
+}
+.links li:hover{
+    color: black;
+}
+.features{
+    display: flex;
+    flex-direction: column;
+}
+.sub{
+    margin-top: 10%;
+    box-shadow: 1px 1px 10px 10px rgba(73, 71, 71, 0.13);
+    font-size: .9rem;
+    background-color: white;
+    position: absolute;
+    border-radius: 4px;
+    padding: 1%;
+}
+.company-sub li{
+    list-style-type: none;
+}
+.company{
+    display: flex;
+    flex-direction: column;
+
+}
+.company-sub{
+    margin-top: 1%;
+    font-size: .9rem;
+    background-color: white;
+    position: absolute;
+    border-radius: 4px;
+    box-shadow: 1px 1px 10px 10px rgba(73, 71, 71, 0.13);
+    padding: 1%;
+}
+.sign-up{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 30%;
+}
+.sign-up a{
+    text-decoration: none;
+    color: var(--Medium-Gray);
+    font-weight: 500;
+}
+.sign-up a:hover{
+    color: black;
+}
+.sign-up button{
+    color: var(--Medium-Gray);
+    border: 2px solid rgb(135, 119, 119);
+    cursor: pointer;
+    padding: 15px 20px;
+    border-radius: 15px;
+    font-weight: 600;
+    background-color: var(--Almost-White);
+}
+.sign-up button:hover{
+    color: black;
+    border: 2px solid black;
+    background-color: var(--Almost-White);
+
+    transition: .3s ease-in-out;
+}
+/*  -----------------Mobile view------------------- */
+.menu-icon{
+    display: none;
+}
+ul.side-menu{
+    margin: 2% 0;
+    display: none;
+    position: fixed;
+    font-size: 25px;
+    background-color: var(--Almost-White);
+    width: 60%;
+    right: -100%;
+    top: 0;
+    height: 100vh;
+    transition: .4s;
+    display: flex;
+    flex-direction: column;
+}
+.side-menu li{
+    margin: 8% 0;
+    color: var(--Almost-Black);
+    list-style-type: none;
+    left: 50px;
+}
+.side-menu li{
+    text-decoration: none;
+    color: var(--Medium-Gray);
+}
+.sub-menu ul, .mobile-sub-menu{
+    transition: .5s;
+    margin: 0 10px 0 0;
+}
+.sub-menu ul li, .mobile-sub-menu ul li{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10%;
+    margin: 10px 0 0 0;
+}
+.body-mobile{
+    display: none;
+}
+.hide{
+    display: none;
+}
+.close{
+    margin: 10px 0 10px 80%;
+}
+.rotate{
+    transform: rotate(180deg);
+}
+#features img{
+    transition: .2s;
+    margin: 0 10px;
+    font-size: 15px;
+}
+#company img{
+    transition: .2s;
+    margin: 0 10px;
+    font-size: 15px;
+}
+.login {
+    text-align: center;
+    margin: -10px 0;
+}
+.login p{
+    font-size: 1.4rem;
+}
+.login button{
+    color: var(--Almost-Black);
+    width: 80%;
+    background-color: var(--Almost-White);
+    border: 1px solid black;
+    border-radius: 12px;
+    height: 30%;
+}
+main{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main img{
+    height: 90%;
+    width: 95%;
+}
+main .title{
+    margin: 15px 0;
+    letter-spacing: 2px;
+    font-size: 2em;
+    font-weight: 900;
+}
+main .about{
+    margin: 0 10px;
+    font-weight: 600;
+    color: var(--Medium-Gray);
+    font-size: 1.2rem;
+}
+main button{
+    background-color: var(--Almost-Black);
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 15px 40px;
+    margin: 20px 0;
+    font-weight: 600;
+    color: white;
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px 0;
+}
+/* ---------------DESKTOP VIEW-------------------- */
+.body-desktop{
+    display: flex;
+    gap: 10%;
+    justify-content: center;
+    align-items: center;
+}
+.desktop-img{
+    flex-basis: 10%;
+    height: 55%;
+    width: 30%;
+}
+.about-desktop{
+    flex-basis: 40%;
+}
+.about-desktop .title{
+    font-weight: 900;
+    font-size: 4.8em;
+}
+.about-desktop .about{
+    font-size: 2em;
+}
+.body-desktop footer img{
+    height: 16px;
+    width: 60px;
+}
+.about-desktop button{
+    font-weight: 700;
+    cursor: pointer;
+    padding: 20px 30px;
+    border-radius: 15px;
+    border: 1px solid black;
+    color: white;
+    transition: .2s;
+    background-color: var(--Almost-Black);
+}
+.about-desktop button:hover{
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+}
+
+/* Screen size variations with media queries */
+@media only screen and (max-width:300px){
+    main .title{
+        font-size: 1.5em;
+    }
+    main .about{
+        font-size: 1em;
+    }
+    .content{
+        margin: 6% 0;
+    }
+}
+@media only screen and (min-width:500px){
+    .content{
+        margin-top: 6%;
+    }
+    main img{
+        height: 80%;
+        width: 80%;
+    }
+    main .title{
+        font-size: 2.5em;
+    }
+    main .about{
+        margin: 0px 10%;
+        font-weight: 500;
+        font-size: 1.2em;
+    }
+    main button{
+        padding: 20px 50px;
+    }
+}
+
+@media only screen and (min-width: 600px){
+    .body-desktop{
+        display: flex;
+        align-items: center;
+        margin-top: 3%;
+    }
+    footer img{
+        cursor: pointer;
+    }
+}
+@media only screen and (max-width: 600px){
+.body-mobile{
+    display: block;
+}
+.body-desktop{
+    display: none;
+}
+.menu-icon{
+    display: block;
+}
+.full-width{
+    display: none;
+}
+}
+@media only screen and (min-width: 881px) {
+    .links{
+        gap: 8%;
+        width: 65%;
+    }
+    .header{
+        font-size: 1em;
+    }
+    .sign-up button{
+        padding: 10px 15px;
+    }
+    .about-desktop .title p{
+        font-size: 1em;
+    }
+    
+}
+@media only screen and (max-width: 700px){
+    .links li{
+        font-size: .8rem;
+    }
+    .logo-icon{
+        height: 10%;
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 880px){
+    .links{
+        gap: 6%;
+        width: 70%;
+        font-size: .8rem;
+        max-width: 50%;
+    }
+    .sign-up button{
+        border-radius: 5px;
+        padding: 4px 9px;
+    }
+    .about-desktop .title p{
+        font-size: 2rem;
+    }
+    .desktop-img{
+        width: 45%;
+    }
+    .about-desktop .about{
+        font-size: .8rem;
+    }
+    .about-desktop button{
+        padding: 10px 15px;
+        border-radius: 7px;
+    }
+}
+@media only screen and (min-width: 894px){
+    .title p{
+        margin: 2% auto;
+    }
+    .header{
+        padding: 1%;
+    }
+}
+@media only screen and (max-width: 1135px){
+    .about-desktop .title p{
+        font-size: 4rem;
+    }
+    .about-desktop .about{
+        font-size: 1.5em;
+    }
+    .desktop-img{
+        height: 30%;
+    }
+}

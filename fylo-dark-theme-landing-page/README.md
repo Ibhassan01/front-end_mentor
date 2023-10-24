@@ -17,8 +17,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Ibhassan01/front-end_mentor/tree/master/fylo-dark-theme-landing-page-master)
-- Live Site URL: [Add live site URL here](https://fylo-dark-theme-landing-page-mu-ochre.vercel.app/)
+- Solution URL: [ Github.com/Ibhassan](https://github.com/Ibhassan01/front-end_mentor/tree/master/fylo-dark-theme-landing-page)
+- Live Site URL: [https://fylo-dark-theme-landing-page-mu-ochre.vercel.app/e](https://fylo-dark-theme-landing-page-mu-ochre.vercel.app/)
 
 ### Built with
 
